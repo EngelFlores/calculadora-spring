@@ -16,9 +16,9 @@ public class CalculadoraServiceTest {
     }
 
     @Test
-    public void soma_dois_numeros_corretamente() {
-        int resultado = service.soma(1, 1);
+    public void soma_dois_numeros_e_converte_o_resultado_para_string() {
+        String resultado = service.soma(1, 1);
 
-        assertThat(resultado, is(2));
+        assertThat(resultado, is("2"));
     }
 }
